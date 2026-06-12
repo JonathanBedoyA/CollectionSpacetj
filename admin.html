@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin | CollectionSpace TJ</title>
+	<meta name="description" content="Panel de administración de CollectionSpace TJ.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand-wrap">
+			<div class="brand-text">
+				<h1>CollectionSpace TJ</h1>
+			</div>
+		</div>
+	</header>
+
+	<main class="admin-layout">
+		<section class="section-box">
+			<div class="form-title">
+				<h1>Panel privado</h1>
+				<p>Agrega, borra o regresa al catálogo cuando termines.</p>
+			</div>
+			<form class="form-card" id="admin-form">
+				<label>
+					Nombre del artículo
+					<input type="text" name="nombre" placeholder="Nombre del artículo" required>
+				</label>
+				<label>
+					Precio
+					<input type="text" name="precio" placeholder="$0.00" required>
+				</label>
+				<label>
+					Estado
+					<select name="estado" required>
+						<option value="Disponible">Disponible</option>
+						<option value="En tratos">En tratos</option>
+						<option value="Vendido">Vendido</option>
+					</select>
+				</label>
+				<label>
+					Imagen
+					<input type="file" name="imagen" accept="image/*" required>
+					<small>Sube una foto desde tu celular o computadora.</small>
+				</label>
+				<label>
+					Información extra
+					<textarea name="descripcion" rows="4" placeholder="Describe el artículo"></textarea>
+				</label>
+				<button class="button primary" type="submit">Guardar artículo</button>
+				<a class="button secondary" href="productos.html">Ir al catálogo</a>
+				<a class="button secondary" href="index.html">Volver</a>
+			</form>
+
+			<div class="admin-lista">
+				<h2>Artículos guardados</h2>
+				<div id="admin-productos" class="admin-items"></div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+	<script src="firebase-config.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
