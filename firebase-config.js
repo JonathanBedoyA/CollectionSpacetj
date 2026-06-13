@@ -1,10 +1,11 @@
 const firebaseConfig = {
-  apiKey: 'REEMPLAZA_ESTE_VALOR',
-  authDomain: 'REEMPLAZA_ESTE_VALOR',
-  projectId: 'REEMPLAZA_ESTE_VALOR',
-  storageBucket: 'REEMPLAZA_ESTE_VALOR',
-  messagingSenderId: 'REEMPLAZA_ESTE_VALOR',
-  appId: 'REEMPLAZA_ESTE_VALOR',
+  apiKey: "AIzaSyCyr5gq_u6FpfoEd5VGoHhIGtun-6aQh2s",
+  authDomain: "collectionspacetj.firebaseapp.com",
+  projectId: "collectionspacetj",
+  storageBucket: "collectionspacetj.firebasestorage.app",
+  messagingSenderId: "957752116114",
+  appId: "1:957752116114:web:3bb48b0039eeea64c0774b",
+  measurementId: "G-EV8E10EGY9"
 };
 
 window.firebaseConfig = firebaseConfig;
